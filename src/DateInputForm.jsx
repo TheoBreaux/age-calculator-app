@@ -25,7 +25,9 @@ const DataInputForm = ({ formState, setFormState }) => {
     <form>
       <div className="birthdate-input">
         <div className="bd-info">
-          <label htmlFor="day" className={touched.day ? "label-error" : ""}>
+          <label
+            htmlFor="day"
+            className={errors.day && touched.day ? "label-error" : ""}>
             DAY
           </label>
           <input
@@ -42,7 +44,11 @@ const DataInputForm = ({ formState, setFormState }) => {
         </div>
 
         <div className="bd-info">
-          <label htmlFor="month" className={errors.month && touched.month ? "label-error" : ""}>MONTH</label>
+          <label
+            htmlFor="month"
+            className={errors.month && touched.month ? "label-error" : ""}>
+            MONTH
+          </label>
           <input
             id="month"
             value={values.month}
@@ -59,7 +65,11 @@ const DataInputForm = ({ formState, setFormState }) => {
         </div>
 
         <div className="bd-info">
-          <label htmlFor="year" className={touched.year ? "label-error" : ""}>YEAR</label>
+          <label
+            htmlFor="year"
+            className={errors.year && touched.year ? "label-error" : ""}>
+            YEAR
+          </label>
           <input
             id="year"
             value={values.year}
