@@ -1,0 +1,22 @@
+.results-output {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.age-output {
+  color: #854dff;
+}
+
+.time-frame {
+  margin: 0;
+}
+
+.time-frame,
+.age-output {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
+}

@@ -1,0 +1,42 @@
+.birthdate-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bd-info {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+label {
+  text-align: left;
+  color: #716f6f;
+  letter-spacing: 2px;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+  padding-left: 10px;
+}
+
+.input-error {
+  border-color: #fc8181;
+}
+
+.error {
+  text-align: left;
+  color: #fc8181;
+  font-size: 9px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.label-error {
+  color: #fc8181;
+}
