@@ -8,12 +8,12 @@ export const validationSchema = yup.object().shape({
     .required("Can't be blank"),
   month: yup
     .string()
-    .matches(/^(?:[1-9]|1[0-2])$/, "Must be a valid month between 01 - 12")
+    .matches(/^0[1-9]|1[0-2]$/, "Must be a valid month between 01 - 12")
     .max(2)
     .required("Can't be blank"),
   year: yup
     .string()
-    .matches(/^(?:[0-9]|[1-9]\d{1,3}|202[0-3])$/, "Must be in the past")
+    .matches(/^(?:[0-1]\d{3}|2(?:0[0-1]\d|02[0-3]))$/, "Must be in the past")
     .min(4)
     .required("Can't be blank"),
 });
